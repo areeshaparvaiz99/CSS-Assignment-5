@@ -1,0 +1,77 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+html{scroll-behavior:smooth}
+body{background:#f7f7f7}
+
+/* HEADER */
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 50px;background:#222;position:sticky;top:0;z-index:1000}
+.logo{color:#fff;font-size:24px;font-weight:bold}.logo span{color:#5cb85c}
+nav{display:flex;gap:30px}nav a{color:#bbb;text-decoration:none;font-size:13px;transition:0.3s}
+nav a:hover{color:#5cb85c;transform:scale(1.1)}
+#ham{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+/* HERO */
+.hero{display:flex;justify-content:space-between;align-items:center;padding:70px;background:#111;color:#fff;gap:40px}
+.hero-text h1{font-size:42px;margin-bottom:15px}
+.hero-text p{color:#aaa;line-height:1.6;max-width:500px;margin-bottom:20px}
+.btn{background:#5cb85c;color:#fff;border:none;padding:12px 22px;border-radius:4px;cursor:pointer;transition:0.3s;margin-right:10px}
+.btn.light{background:transparent;border:1px solid #5cb85c;color:#5cb85c}
+.btn:hover{background:#449d44;transform:translateY(-3px);box-shadow:0 5px 15px rgba(0,0,0,0.3)}
+
+/* MOBILE ANIMATION - مس والی */
+.float{width:280px;animation:float 3s ease-in-out infinite;transition:0.3s}
+.float:hover{transform:scale(1.05)}
+@keyframes float{
+0%,100%{transform:translateY(0px)}
+50%{transform:translateY(-20px)}
+}
+
+.sec{padding:60px 70px}.white{background:#fff}.dark{background:#111;color:#fff}
+.sec h2{font-size:28px;margin-bottom:10px}.sec h2 span{color:#5cb85c}
+.sub{text-align:center;color:#777;margin-bottom:30px}
+.flex{display:flex;gap:40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.about-img{width:480px;max-width:100%;transition:0.4s}.about-img:hover{transform:scale(1.03)}
+.item{display:flex;gap:15px;margin-bottom:20px;transition:0.3s}.item:hover{transform:translateX(10px)}
+.item i{background:#e8f5e9;color:#5cb85c;width:50px;height:50px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:0.3s}
+.item:hover i{background:#5cb85c;color:#fff}
+
+/* FACTS BACKGROUND PICTURE */
+.facts{background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://picsum.photos/id/1018/1200/600');background-size:cover;background-attachment:fixed;color:#fff;text-align:center;padding:80px 20px}
+.facts-row{justify-content:center;gap:120px;margin-top:30px}.facts h1{font-size:50px;color:#5cb85c;margin:10px 0}.facts i{font-size:30px;color:#5cb85c}
+
+/* ULLAM SECTION BACKGROUND */
+.ullam{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://picsum.photos/id/1019/1200/600');background-size:cover;background-attachment:fixed;color:#fff;text-align:center;padding:90px 20px}
+
+/* GALLERY */
+.gallery{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-top:30px}
+.gallery img{width:160px;height:160px;object-fit:cover;border-radius:20px;transition:0.4s;clip-path:polygon(25% 0%,75% 0%,100% 25%,100% 75%,75% 100%,25% 100%,0% 75%,0% 25%)}
+.gallery img:hover{transform:scale(1.15) rotate(3deg);box-shadow:0 10px 20px rgba(0,0,0,0.3)}
+
+/* CONTACT */
+.contact{background:#111;color:#fff;padding:60px 40px}.contact form{flex:1;display:flex;flex-direction:column;gap:15px;max-width:500px}.contact input,.contact textarea{padding:12px;background:transparent;border:none;border-bottom:1px solid #444;color:#fff;outline:none;transition:0.3s}.contact input:focus,.contact textarea:focus{border-bottom:1px solid #5cb85c}
+.contact-box{background:#fff;color:#222;padding:30px;border-radius:10px;min-width:300px;transition:0.3s}.contact-box:hover{transform:translateY(-5px)}
+.copy{text-align:center;margin-top:40px;color:#777;border-top:1px solid #333;padding-top:15px;font-size:13px}.copy span{color:#5cb85c}
+
+/* MEDIA QUERIES - RESPONSIVE */
+@media(max-width:900px){
+#ham{display:block}
+nav{display:none;position:fixed;top:54px;left:0;width:100%;background:#222;flex-direction:column;padding:20px;gap:15px}
+nav.show{display:flex}
+.hero,.sec,.contact{padding:30px 20px;flex-direction:column;text-align:center}
+.hero-text h1{font-size:30px}
+.float{width:220px}
+.facts-row{flex-direction:column;gap:30px}
+.about-img{width:300px}
+}
+.float {
+    animation: floating 2s ease-in-out infinite;
+}
+
+.about-img {
+    animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { tranform: translateY(-20px); }
+    100% { tranform: translateY(0px); }
+}

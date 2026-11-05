@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Areesha App - Assignment 5</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+<div class="logo">Areesha<span>App</span></div>
+<nav id="nav">
+<a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+<a href="#gallery">GALLERY</a>
+<a href="#contact">CONTACT</a>
+</nav>
+<button id="ham">☰</button>
+</header>
+
+<section id="home" class="hero">
+<div class="hero-text">
+<h1>HOME PAGE LANDING</h1>
+<p>Hello! I am Areesha Parvaiz. This is my CSS Assignment 5 from Saylani Mass IT Training. This landing page is created using Flexbox and Media Queries. It is fully responsive and user-friendly.</p>
+<button class="btn">Download the App</button>
+<button class="btn light">Discover more</button>
+</div>
+<img class="float" src="mobile1.png" alt="mobile">
+</section>
+
+<section id="about" class="sec white">
+<h2>DEBITIS, <span>IPSUM</span></h2>
+<p class="sub">Lorem ipsum dolor sit amet</p>
+<div class="flex">
+<img class="about-img" src="mobile-group.png" alt="phones">
+<div class="points">
+<div class="item"><i class="fa-solid fa-user"></i><div><b>Consectetur Adipiscing</b><p>Lorem ipsum dolor sit amet.</p></div></div>
+<div class="item"><i class="fa-solid fa-rotate"></i><div><b>Ullam Recusandae</b><p>Lorem ipsum dolor sit.</p></div></div>
+<div class="item"><i class="fa-solid fa-bell"></i><div><b>Consectetur Adipiscing</b><p>Lorem ipsum dolor sit amet.</p></div></div>
+<div class="item"><i class="fa-solid fa-wifi"></i><div><b>Responsive Design</b><p>Made with flex & media query.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="facts">
+<h2>SOME FACTS ABOUT US</h2>
+<div class="flex facts-row">
+<div><i class="fa-solid fa-cloud-arrow-down"></i><h1>765</h1><p>DOWNLOADS</p></div>
+<div><i class="fa-solid fa-heart"></i><h1>985</h1><p>PEOPLE RATED 5</p></div>
+<div><i class="fa-brands fa-twitter"></i><h1>940</h1><p>FOLLOWERS</p></div>
+</div>
+</section>
+
+<section class="sec dark">
+<h2>DEBITIS, IPSUM</h2>
+<div class="flex">
+<img src="mobile2.png" style="width:300px" class="float" alt="mobile">
+<div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
+<button class="btn">Download the App</button><button class="btn light">Discover more</button>
+</div>
+</div>
+</section>
+
+<section class="ullam">
+<h2>ULLAM RECUS ILLO</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo quis distinctio.</p>
+<button class="btn" style="margin-top:20px">Discover more</button>
+</section>
+
+<section id="gallery" class="sec white">
+<h2><i class="fa-solid fa-camera"></i> GALLERY</h2>
+<div class="gallery">
+<img src="https://picsum.photos/id/1015/200/200">
+<img src="https://picsum.photos/id/1016/200/200">
+<img src="https://picsum.photos/id/1025/200/200">
+<img src="https://picsum.photos/id/1035/200/200">
+<img src="https://picsum.photos/id/1040/200/200">
+<img src="https://picsum.photos/id/1060/200/200">
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="flex">
+<form><h3>Send us a message</h3><input placeholder="Name"><input placeholder="Email"><input placeholder="Subject"><textarea placeholder="Message"></textarea><button class="btn">Send Message</button></form>
+<div class="contact-box"><h3>Contact us</h3><p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p><p><i class="fa-solid fa-phone"></i> +92-3111111111</p><p><i class="fa-solid fa-envelope"></i> areesha@smit.com</p></div>
+</div>
+<p class="copy">created by <span>Areesha Parvaiz</span> | all rights reserved</p>
+</section>
+
+<script>
+document.getElementById('ham').onclick = () => {
+document.getElementById('nav').classList.toggle('show')
+}
+</script>
+
+</body>
+</html>
